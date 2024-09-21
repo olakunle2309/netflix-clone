@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    color: yellow;
+}
+.title h3{
+    color: white;
+}
+/*------------------  navigation --------------*/
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    
+    font-size: 20px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+nav a:hover{
+    color: yellow;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 0, 179);
+}
+.banner .slider{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 55%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun{
+    from{
+        transform:perspective(1000px) rotateY(-360deg);
+    }t0{
+        transform:perspective(1000px) rotateY(0deg);
+    }
+}
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) 
+    translateZ(400px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*@media(max-width:700px){
+    nav ul{
+        display: block;
+        width: 200px;        
+        background-color: brown;
+    }
+    .banner{
+        width: 50%;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        background-color: black;
+    }
+    .banner .slider{
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        top: 50%;
+        left: calc(50% - 20px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        animation: autoRun 20s linear infinite;
+    }
+    
+    @keyframes autoRun{
+        from{
+            transform:perspective(1000px) rotateY(-360deg);
+        }t0{
+            transform:perspective(1000px) rotateY(0deg);
+        }
+    }
+    .banner .slider .item{
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) 
+        translateZ(100px);
+    }
+    .banner .slider .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    
+}
+/* ------------contact------------*/
+.header{
+    background-color: rgb(255, 0, 55);
+    height: 50vh;
+}
+.heading{
+    font-size: 64px;
+    color: gold;
+    text-align: center;
+    margin-top: 80px;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    margin-bottom: 10px;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 10%;
+}
+.items{
+    margin-right: 100px;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.items p{
+    color: red;
+    margin-top: -10px;
+}
+
+input, textarea{
+    width: 30%;
+    margin-bottom: 10px ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+background-color: powderblue;
+border: none;border-radius: 5px;
+padding: 5px; width: 150px;
+
+}
+/*---------- testimonial--------*/
+
+.testimonial{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.testimonial-row{
+    display: flex;
+}
+.testimonial-col{
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #c568c5; 
+    padding: 25px;
+    cursor: pointer;
+    
+     
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonial-col h3{
+    margin-top: 10px;
+    text-align: left;
+}
+.testimonial-col p{
+    padding: 0px;
+    margin-top: 5px;
+}
+.testimonial-col .fa-star{
+    color: yellow;
+}
+/*---------- products ----------*/
+
+.container{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 100px;
+}
+.card h3{
+    margin-top: 5px;
+    
+}
+.fa-square-whatsapp{
+
+}
+
+
+
+
