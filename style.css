@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+font-fam
 .title{
     text-align: center;
 }
@@ -133,7 +133,7 @@ nav a:hover{
 }
 /* ------------contact------------*/
 .header{
-    background-color: rgb(255, 0, 55);
+    background-color: rgb(255, 0, 179);
     height: 50vh;
 }
 .heading{
@@ -164,7 +164,7 @@ nav a:hover{
     margin-bottom: 20px;
 }
 .items p{
-    color: red;
+    color: coral;
     margin-top: -10px;
 }
 
@@ -188,6 +188,10 @@ padding: 5px; width: 150px;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    margin-bottom: 50px;
+}
+.testimonial p{
+    color: black;
 }
 .testimonial-row{
     display: flex;
@@ -197,12 +201,10 @@ padding: 5px; width: 150px;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #c568c5; 
+    background: #e7b2e7; 
     padding: 25px;
     cursor: pointer;
-    
-     
-}
+ }
 .testimonial-col img{
     height: 40px;
     margin-left: 5px;
@@ -216,9 +218,11 @@ padding: 5px; width: 150px;
 .testimonial-col p{
     padding: 0px;
     margin-top: 5px;
+    color: black;
 }
 .testimonial-col .fa-star{
-    color: yellow;
+    color: white;
+    font-size: 20px;
 }
 /*---------- products ----------*/
 
@@ -235,9 +239,47 @@ padding: 5px; width: 150px;
     margin-top: 5px;
     
 }
-.fa-square-whatsapp{
 
+/*------------------- footer ------------------*/
+footer{
+    display: flex;
+    justify-content: space-around;
 }
+footer .contact h5{
+    margin-bottom: -8px;
+}
+footer .contact p{
+    margin-bottom: -10px;
+}
+.footer-nav ul li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: coral;
+}
+.fa-brands, .fa-solid{
+    font-size: 30px;
+    color: coral;
+    cursor: pointer;
+}
+footer .contact h5, p{
+    color: coral
+}
+.copyright{
+    background: #555;
+    color: coral;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.fa-copyright{
+    font-size: 15px;
+}
+   
 
 
 
